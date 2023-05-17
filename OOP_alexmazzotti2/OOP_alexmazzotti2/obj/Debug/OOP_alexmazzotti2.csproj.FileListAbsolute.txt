@@ -1,0 +1,11 @@
+C:\Users\alexm\OneDrive\Desktop\workspace-prog\OOP_alexmazzotti2\OOP_alexmazzotti2\OOP_alexmazzotti2\bin\Debug\OOP_alexmazzotti2.exe.config
+C:\Users\alexm\OneDrive\Desktop\workspace-prog\OOP_alexmazzotti2\OOP_alexmazzotti2\OOP_alexmazzotti2\bin\Debug\OOP_alexmazzotti2.exe
+C:\Users\alexm\OneDrive\Desktop\workspace-prog\OOP_alexmazzotti2\OOP_alexmazzotti2\OOP_alexmazzotti2\bin\Debug\OOP_alexmazzotti2.pdb
+C:\Users\alexm\OneDrive\Desktop\workspace-prog\OOP_alexmazzotti2\OOP_alexmazzotti2\OOP_alexmazzotti2\obj\Debug\OOP_alexmazzotti2.csproj.AssemblyReference.cache
+C:\Users\alexm\OneDrive\Desktop\workspace-prog\OOP_alexmazzotti2\OOP_alexmazzotti2\OOP_alexmazzotti2\obj\Debug\OOP_alexmazzotti2.Form1.resources
+C:\Users\alexm\OneDrive\Desktop\workspace-prog\OOP_alexmazzotti2\OOP_alexmazzotti2\OOP_alexmazzotti2\obj\Debug\OOP_alexmazzotti2.Properties.Resources.resources
+C:\Users\alexm\OneDrive\Desktop\workspace-prog\OOP_alexmazzotti2\OOP_alexmazzotti2\OOP_alexmazzotti2\obj\Debug\OOP_alexmazzotti2.csproj.GenerateResource.cache
+C:\Users\alexm\OneDrive\Desktop\workspace-prog\OOP_alexmazzotti2\OOP_alexmazzotti2\OOP_alexmazzotti2\obj\Debug\OOP_alexmazzotti2.csproj.CoreCompileInputs.cache
+C:\Users\alexm\OneDrive\Desktop\workspace-prog\OOP_alexmazzotti2\OOP_alexmazzotti2\OOP_alexmazzotti2\obj\Debug\OOP_alexmazzotti2.exe
+C:\Users\alexm\OneDrive\Desktop\workspace-prog\OOP_alexmazzotti2\OOP_alexmazzotti2\OOP_alexmazzotti2\obj\Debug\OOP_alexmazzotti2.pdb
+C:\Users\alexm\OneDrive\Desktop\workspace-prog\OOP_alexmazzotti2\OOP_alexmazzotti2\OOP_alexmazzotti2\obj\Debug\OOP_alexmazzotti2.Form2.resources
