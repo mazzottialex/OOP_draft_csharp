@@ -52,6 +52,7 @@ namespace OOP_alexmazzotti2
             {
                 if (radio.Checked)
                 {
+                    LogicsFile file = new LogicsFile();
                     Console.WriteLine(radio.Text);
                 }
             }
