@@ -41,11 +41,12 @@ namespace OOP_alexmazzotti2
             this.button6.TabIndex = 5;
             this.button6.Text = "Prosegui";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(168, 161);
+            this.label1.Location = new System.Drawing.Point(168, 166);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 13);
             this.label1.TabIndex = 6;

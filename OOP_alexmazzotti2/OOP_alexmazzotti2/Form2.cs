@@ -12,7 +12,7 @@ namespace OOP_alexmazzotti2
 {
     public partial class Form2 : Form
     {
-        //private RadioButton rb;
+        private List<RadioButton> _listRadio=new List<RadioButton>();
         public Form2()
         {
             InitializeComponent();
@@ -28,14 +28,20 @@ namespace OOP_alexmazzotti2
                 RadioButton rb = new RadioButton();
                 rb.Text=mod.ToString();
                 rb.Location = new System.Drawing.Point(280, 120 + i);
+                _listRadio.Add(rb);
                 Controls.Add(rb);
-                
             }
-        } 
+        }
 
-        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
-
+            foreach (RadioButton radio in _listRadio)
+            {
+                if (radio.Checked)
+                {
+                    Console.WriteLine(radio.Text);
+                }
+            }
         }
     }
 }
