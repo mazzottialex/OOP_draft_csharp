@@ -1,7 +1,7 @@
 ﻿
 namespace OOP_alexmazzotti2
 {
-    partial class Form3
+    partial class Draft
     {
         /// <summary>
         /// Required designer variable.

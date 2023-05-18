@@ -10,17 +10,18 @@ using System.Windows.Forms;
 
 namespace OOP_alexmazzotti2
 {
-    public partial class Form3 : Form
+    public partial class Draft : Form
     {
         private ILogicsForm3 _log;
         private Modulo _mod;
-        public Form3(Modulo mod)
+        private List<Button> liBtn=new List<Button>();
+        public Draft(Modulo mod)
         {
             _mod = mod;
             InitializeComponent();
             InitializeButton();          
             _log = new LogicsForm3Impl();
-            Console.WriteLine(_log.GetList(new Modulo(4, 3, 3))[0]);
+            //Console.WriteLine(_log.GetList(_mod)[0]);
         }
 
         private void InitializeButton()
@@ -31,15 +32,21 @@ namespace OOP_alexmazzotti2
             int i = 0;
             foreach(int val in moduloLi)
             {
-                
                 for (int j = 0; j < val; j++)
                 {
                     Button btn = new Button();
+                    liBtn.Add(btn);
+                    btn.Click += Btn_Click;
                     btn.Text = "Scegli";
                     tableLayoutPanel1.Controls.Add(btn, 6 - val + j * 2, i);
                 }
                 i++;
             }
+        }
+
+        private void Btn_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("cooaa");
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)

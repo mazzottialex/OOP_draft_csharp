@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace OOP_alexmazzotti2
 {
-    public partial class Form2 : Form
+    public partial class DialogModulo : Form
     {
         private IDictionary<RadioButton, Modulo> _dic = new Dictionary<RadioButton, Modulo>();
         private List<Modulo> _listModuli = new List<Modulo> { new Modulo(5, 3, 2),
@@ -23,7 +23,7 @@ namespace OOP_alexmazzotti2
             };
         private Modulo _modS;
 
-        public Form2()
+        public DialogModulo()
         {
             InitializeComponent();
             InitializeRadioButton();

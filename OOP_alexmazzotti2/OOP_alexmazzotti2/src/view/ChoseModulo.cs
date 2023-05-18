@@ -10,18 +10,17 @@ using System.Windows.Forms;
 
 namespace OOP_alexmazzotti2
 {
-    public partial class Form1 : Form
+    public partial class ChoseModulo : Form
     {
         private Modulo mod;
-        public Form1()
+        public ChoseModulo()
         {
             InitializeComponent();
-            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 form = new Form2();
+            DialogModulo form = new DialogModulo();
             form.ShowDialog();
             mod=form.GetModuloSelezionato();
             button1.Visible = false;
@@ -35,7 +34,7 @@ namespace OOP_alexmazzotti2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3 form = new Form3(mod);
+            Draft form = new Draft(mod);
             form.Show();
             this.Hide();
         }

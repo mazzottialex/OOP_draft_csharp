@@ -1,7 +1,7 @@
 ﻿
 namespace OOP_alexmazzotti2
 {
-    partial class Form2
+    partial class DialogModulo
     {
         /// <summary>
         /// Required designer variable.
