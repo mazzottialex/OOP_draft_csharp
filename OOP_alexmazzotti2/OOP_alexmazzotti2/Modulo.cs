@@ -8,25 +8,25 @@ namespace OOP_alexmazzotti2
 {
     class Modulo
     {
-        public int _p { get; }
-        public int _d { get; }
-        public int _c { get; }
-        public int _a { get; }
+        public int P { get; }
+        public int D { get; }
+        public int C { get; }
+        public int A { get; }
         public Modulo(int d, int c, int a)
         {
-            _p = 1;
-            _d = d;
-            _c = c;
-            _a = a;
+            P = 1;
+            D = d;
+            C = c;
+            A = a;
         }
 
         public List<int> getList()
         {
-            return new List<int>() { _p, _d, _c, _a };
+            return new List<int>() { P, D, C, A };
         }
         override public string ToString()
         {
-            return _d.ToString() +"-"+ _c.ToString() +"-"+ _a.ToString();
+            return D.ToString() +"-"+ C.ToString() +"-"+ A.ToString();
         }
 
     }

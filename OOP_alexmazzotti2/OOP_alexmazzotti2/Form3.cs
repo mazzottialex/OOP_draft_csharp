@@ -23,7 +23,7 @@ namespace OOP_alexmazzotti2
             Modulo mod = new Modulo(4, 3, 2);
             List<int> moduloLi = mod.getList();
             Console.WriteLine(moduloLi.ToString());
-           // moduloLi.Reverse();
+            moduloLi.Reverse();
             int i = 0;
             foreach(int val in moduloLi)
             {

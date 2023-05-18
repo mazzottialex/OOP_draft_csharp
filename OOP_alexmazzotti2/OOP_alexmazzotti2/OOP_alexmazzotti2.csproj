@@ -65,6 +65,8 @@
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
     <Compile Include="LogicsFile.cs" />
+    <Compile Include="ILogicsForm3.cs" />
+    <Compile Include="LogicsForm3Impl.cs" />
     <Compile Include="Modulo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -9,7 +9,7 @@ namespace OOP_alexmazzotti2
 {
     class LogicsFile
     {
-        public List<Calciatore> _li { get; }
+        public List<Calciatore> Li { get; }
         public LogicsFile()
         {
             string filePath = "C:\\Users\\alexm\\OneDrive\\Desktop\\workspace-prog\\OOP_alexmazzotti2\\OOP_alexmazzotti2\\OOP_alexmazzotti2\\res\\listacalciatori.txt";
@@ -20,7 +20,7 @@ namespace OOP_alexmazzotti2
                 while ((line = reader.ReadLine()) != null)
                 {
                     string[] parti = line.Split(separator);
-                    _li.Add(new Calciatore(parti[0].ToString(), parti[1].ToCharArray()[0]));
+                    Li.Add(new Calciatore(parti[0].ToString(), parti[1].ToCharArray()[0]));
                 }
             }
         }
