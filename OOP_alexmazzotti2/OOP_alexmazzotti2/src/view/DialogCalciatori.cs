@@ -29,7 +29,10 @@ namespace OOP_alexmazzotti2.src.view
                 i++;
                 Button btn = new Button();
                 //btn.Click += Btn_Click;
-                btn.Text = c.ToString();
+                btn.Text = c.Nome;
+                btn.Width = 120;
+                btn.Height = 40 ;
+                btn.Anchor = AnchorStyles.None;
                 tableLayoutPanel1.Controls.Add(btn, i, 0);
             }
         }

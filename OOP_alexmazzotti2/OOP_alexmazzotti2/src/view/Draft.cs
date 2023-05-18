@@ -15,8 +15,8 @@ namespace OOP_alexmazzotti2
     {
         private ILogicsForm3 _log;
         private Modulo _mod;
-        private List<Button> _liBtn=new List<Button>();
         private List<Calciatore> _li = new List<Calciatore>();
+        private Dictionary<Button, int> _dic = new Dictionary<Button, int>();
         public Draft(Modulo mod)
         {
             _mod = mod;
@@ -33,15 +33,17 @@ namespace OOP_alexmazzotti2
             Console.WriteLine(moduloLi.ToString());
             moduloLi.Reverse();
             int i = 0;
+            int n = 0;
             foreach(int val in moduloLi)
             {
                 for (int j = 0; j < val; j++)
                 {
                     Button btn = new Button();
-                    _liBtn.Add(btn);
+                    _dic.Add(btn, n);
                     btn.Click += Btn_Click;
                     btn.Text = "Scegli";
                     tableLayoutPanel1.Controls.Add(btn, 6 - val + j * 2, i);
+                    n++;
                 }
                 i++;
             }
@@ -49,7 +51,9 @@ namespace OOP_alexmazzotti2
 
         private void Btn_Click(object sender, EventArgs e)
         {
-            DialogCalciatori form = new DialogCalciatori(_li);
+            int i = _dic[(Button)sender];
+            Console.WriteLine(i.ToString());
+            DialogCalciatori form = new DialogCalciatori(_li.GetRange(i*5, 5));
             form.ShowDialog();
         }
 

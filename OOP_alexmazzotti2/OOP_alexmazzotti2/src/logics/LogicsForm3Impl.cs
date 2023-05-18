@@ -23,7 +23,7 @@ namespace OOP_alexmazzotti2
             foreach(int n in val)
             {
                 Ruolo ruolo = (Ruolo)Enum.Parse(typeof(Ruolo), i.ToString());
-                liRet.AddRange(GetRandomPlayers(ruolo, n));
+                liRet.AddRange(GetRandomPlayers(ruolo, n*5));
                 i++;
             }
             return liRet;
