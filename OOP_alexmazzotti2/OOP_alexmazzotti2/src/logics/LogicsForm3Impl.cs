@@ -38,7 +38,7 @@ namespace OOP_alexmazzotti2
             for (int i = 0; i < n; i++){
                 do{
                     val = rnd.Next(Li.Count());
-                } while (!newLi.Contains(Li[val]) && r==Li[val].Ruolo);
+                } while (newLi.Contains(Li[val]) || r!=Li[val].Ruolo);
                 newLi.Add(Li[val]);
             }
             return newLi;

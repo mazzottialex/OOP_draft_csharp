@@ -53,6 +53,12 @@
     <Compile Include="src\view\ChoseModulo.Designer.cs">
       <DependentUpon>ChoseModulo.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\view\DialogCalciatori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\view\DialogCalciatori.Designer.cs">
+      <DependentUpon>DialogCalciatori.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\view\DialogModulo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="src\data\Calciatore.cs" />
     <EmbeddedResource Include="src\view\ChoseModulo.resx">
       <DependentUpon>ChoseModulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\view\DialogCalciatori.resx">
+      <DependentUpon>DialogCalciatori.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\view\DialogModulo.resx">
       <DependentUpon>DialogModulo.cs</DependentUpon>

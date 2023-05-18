@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OOP_alexmazzotti2.src.view;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,13 +15,15 @@ namespace OOP_alexmazzotti2
     {
         private ILogicsForm3 _log;
         private Modulo _mod;
-        private List<Button> liBtn=new List<Button>();
+        private List<Button> _liBtn=new List<Button>();
+        private List<Calciatore> _li = new List<Calciatore>();
         public Draft(Modulo mod)
         {
             _mod = mod;
+            _log = new LogicsForm3Impl();
+            _li = _log.GetList(mod);
             InitializeComponent();
             InitializeButton();          
-            _log = new LogicsForm3Impl();
             //Console.WriteLine(_log.GetList(_mod)[0]);
         }
 
@@ -35,7 +38,7 @@ namespace OOP_alexmazzotti2
                 for (int j = 0; j < val; j++)
                 {
                     Button btn = new Button();
-                    liBtn.Add(btn);
+                    _liBtn.Add(btn);
                     btn.Click += Btn_Click;
                     btn.Text = "Scegli";
                     tableLayoutPanel1.Controls.Add(btn, 6 - val + j * 2, i);
@@ -46,7 +49,8 @@ namespace OOP_alexmazzotti2
 
         private void Btn_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("cooaa");
+            DialogCalciatori form = new DialogCalciatori(_li);
+            form.ShowDialog();
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
