@@ -6,21 +6,15 @@ using System.Threading.Tasks;
 
 namespace OOP_alexmazzotti2
 {
-    public enum Ruolo
-    {
-        P=0,
-        D=1,
-        C=2,
-        A=3
-    }
     class LogicsForm3Impl : ILogicsForm3
     {
         public List<Calciatore> Li { get; set; }
-        public LogicsForm3Impl(List<Calciatore> li){
-            this.Li=li;
+        public LogicsForm3Impl(){
+            LogicsFile file = new LogicsFile();
+            Li = file.GetLi();
         }
         public List<Calciatore> GetList(Modulo mod){
-            List<int> val = mod.getList();
+            List<int> val = mod.GetList();
             List<Calciatore> liRet = new List<Calciatore>();
             int i = 0;
             //val lista 1,4,3,3

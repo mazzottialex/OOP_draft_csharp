@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP_alexmazzotti2
 {
-    class Modulo
+    public class Modulo
     {
         public int P { get; }
         public int D { get; }
@@ -20,7 +20,7 @@ namespace OOP_alexmazzotti2
             A = a;
         }
 
-        public List<int> getList()
+        public List<int> GetList()
         {
             return new List<int>() { P, D, C, A };
         }

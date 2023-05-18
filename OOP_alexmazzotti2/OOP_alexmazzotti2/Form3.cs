@@ -12,20 +12,20 @@ namespace OOP_alexmazzotti2
 {
     public partial class Form3 : Form
     {
-        private ILogicsForm3 log;
-        public Form3()
+        private ILogicsForm3 _log;
+        private Modulo _mod;
+        public Form3(Modulo mod)
         {
+            _mod = mod;
             InitializeComponent();
-            InitializeButton();
-            LogicsFile file = new LogicsFile();
-            log = new LogicsForm3Impl(file.GetLi());
-            Console.WriteLine(log.GetList(new Modulo(4, 3, 3))[0]);
+            InitializeButton();          
+            _log = new LogicsForm3Impl();
+            Console.WriteLine(_log.GetList(new Modulo(4, 3, 3))[0]);
         }
 
         private void InitializeButton()
         {
-            Modulo mod = new Modulo(4, 3, 2);
-            List<int> moduloLi = mod.getList();
+            List<int> moduloLi = _mod.GetList();
             Console.WriteLine(moduloLi.ToString());
             moduloLi.Reverse();
             int i = 0;

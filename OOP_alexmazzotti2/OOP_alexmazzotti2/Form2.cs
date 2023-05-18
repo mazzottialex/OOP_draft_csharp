@@ -49,10 +49,9 @@ namespace OOP_alexmazzotti2
             {
                 if (radio.Checked)
                 {
-                    //LogicsFile file = new LogicsFile();
-                    Console.WriteLine(radio.Text);
                     Modulo modSelezionato = _dic[radio];
-                    Form3 form = new Form3();
+                    
+                    Form3 form = new Form3(modSelezionato);
                     form.Show();
                 }
             }
