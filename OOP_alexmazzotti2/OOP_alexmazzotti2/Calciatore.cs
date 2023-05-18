@@ -8,12 +8,12 @@ namespace OOP_alexmazzotti2
 {
     class Calciatore
     {
-        private string Nome { get; }
-        private Ruolo Ruolo { get; }
+        public string Nome { get; }
+        public Ruolo Ruolo { get; }
         public Calciatore(string nome, Ruolo ruolo)
         {
             Nome = nome;
-            Ruolo = Ruolo;
+            Ruolo = ruolo;
         }
         public override string ToString()
         {

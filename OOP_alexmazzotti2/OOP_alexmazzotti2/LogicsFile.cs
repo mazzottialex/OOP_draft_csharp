@@ -20,7 +20,23 @@ namespace OOP_alexmazzotti2
                 while ((line = reader.ReadLine()) != null)
                 {
                     string[] parti = line.Split(separator);
-                    Li.Add(new Calciatore(parti[0].ToString(), parti[1].ToCharArray()[0]));
+                    Ruolo r;
+                    switch (parti[1].ToCharArray()[0])
+                    {
+                        case ('P'):
+                            r = Ruolo.P;
+                            break;
+                        case ('D'):
+                            r = Ruolo.D;
+                            break;
+                        case ('C'):
+                            r = Ruolo.C;
+                            break;
+                        default:
+                            r = Ruolo.A;
+                            break;
+                    }
+                    Li.Add(new Calciatore(parti[0].ToString(), r));
                 }
             }
         }
