@@ -12,10 +12,14 @@ namespace OOP_alexmazzotti2
 {
     public partial class Form3 : Form
     {
+        private ILogicsForm3 log;
         public Form3()
         {
             InitializeComponent();
             InitializeButton();
+            LogicsFile file = new LogicsFile();
+            log = new LogicsForm3Impl(file.GetLi());
+            Console.WriteLine(log.GetList(new Modulo(4, 3, 3))[0]);
         }
 
         private void InitializeButton()

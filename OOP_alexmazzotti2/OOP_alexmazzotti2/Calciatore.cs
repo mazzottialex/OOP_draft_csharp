@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP_alexmazzotti2
 {
-    class Calciatore
+    public class Calciatore
     {
         public string Nome { get; }
         public Ruolo Ruolo { get; }
