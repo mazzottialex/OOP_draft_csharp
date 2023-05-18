@@ -52,6 +52,8 @@ namespace OOP_alexmazzotti2
                     //LogicsFile file = new LogicsFile();
                     Console.WriteLine(radio.Text);
                     Modulo modSelezionato = _dic[radio];
+                    Form3 form = new Form3();
+                    form.Show();
                 }
             }
         }
