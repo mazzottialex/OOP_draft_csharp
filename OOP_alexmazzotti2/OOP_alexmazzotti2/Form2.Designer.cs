@@ -35,7 +35,7 @@ namespace OOP_alexmazzotti2
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(451, 161);
+            this.button6.Location = new System.Drawing.Point(400, 140);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 5;
@@ -46,7 +46,7 @@ namespace OOP_alexmazzotti2
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(168, 166);
+            this.label1.Location = new System.Drawing.Point(110, 140);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 13);
             this.label1.TabIndex = 6;
@@ -56,7 +56,7 @@ namespace OOP_alexmazzotti2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(584, 311);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button6);
             this.Name = "Form2";

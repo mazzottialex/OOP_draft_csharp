@@ -21,6 +21,7 @@ namespace OOP_alexmazzotti2
                 new Modulo(3, 5, 2),
                 new Modulo(3, 4, 3),
             };
+        private Modulo _modS;
 
         public Form2()
         {
@@ -37,12 +38,16 @@ namespace OOP_alexmazzotti2
                 RadioButton rb = new RadioButton();
                 rb.Text = mod.ToString();
                 
-                rb.Location = new System.Drawing.Point(280, 120 + i);
+                rb.Location = new System.Drawing.Point(220, 40 + i);
                 _dic.Add(rb, mod);
                 Controls.Add(rb);
             }
         }
 
+        public Modulo GetModuloSelezionato()
+        {
+            return _modS;
+        }
         private void button6_Click(object sender, EventArgs e)
         {
             foreach (RadioButton radio in _dic.Keys)
@@ -50,11 +55,11 @@ namespace OOP_alexmazzotti2
                 if (radio.Checked)
                 {
                     Modulo modSelezionato = _dic[radio];
-                    
-                    Form3 form = new Form3(modSelezionato);
-                    form.Show();
+                    _modS = _dic[radio];
+                    Close();
                 }
             }
         }
+
     }
 }
