@@ -8,16 +8,16 @@ namespace OOP_alexmazzotti2
 {
     class Calciatore
     {
-        private string _nome { get; }
-        private char _pos { get; }
-        public Calciatore(string nome, char pos)
+        private string Nome { get; }
+        private Ruolo Ruolo { get; }
+        public Calciatore(string nome, Ruolo ruolo)
         {
-            _nome = nome;
-            _pos = pos;
+            Nome = nome;
+            Ruolo = Ruolo;
         }
         public override string ToString()
         {
-            return _nome.ToString()+" "+_pos.ToString();
+            return Nome.ToString()+" "+Ruolo.ToString();
         }
     }
 }

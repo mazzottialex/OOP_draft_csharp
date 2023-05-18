@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace OOP_alexmazzotti2
 {
+    public enum Ruolo
+    {
+        P=1,
+        D=2,
+        C=3,
+        A=4
+    }
     class LogicsForm3Impl : ILogicsForm3
     {
         public List<Calciatore> Li { get; set; }
@@ -17,6 +24,7 @@ namespace OOP_alexmazzotti2
             List<Calciatore> liRet = new List<Calciatore>();
             foreach(int n in val)
             {
+                
                 liRet.Add=
             }
             return 
