@@ -15,6 +15,18 @@ namespace OOP_alexmazzotti2
         public Form3()
         {
             InitializeComponent();
+            InitializeButton();
+        }
+
+        private void InitializeButton()
+        {
+            Modulo mod = new Modulo(4, 3, 3);
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
