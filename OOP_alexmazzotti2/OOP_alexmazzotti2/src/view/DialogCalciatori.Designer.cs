@@ -53,6 +53,7 @@ namespace OOP_alexmazzotti2.src.view
             // 
             // btnOk
             // 
+            this.btnOk.Enabled = false;
             this.btnOk.Location = new System.Drawing.Point(515, 197);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 23);
@@ -63,7 +64,7 @@ namespace OOP_alexmazzotti2.src.view
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(388, 197);
+            this.btnCancel.Location = new System.Drawing.Point(412, 197);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 2;
