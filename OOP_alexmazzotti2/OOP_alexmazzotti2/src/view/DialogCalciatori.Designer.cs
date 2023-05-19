@@ -37,23 +37,23 @@ namespace OOP_alexmazzotti2.src.view
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tableLayoutPanel1.ColumnCount = 5;
+            this.tableLayoutPanel1.ColumnCount = 6;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 35);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 204F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(644, 143);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(617, 118);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(560, 161);
+            this.btnOk.Location = new System.Drawing.Point(515, 197);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 23);
             this.btnOk.TabIndex = 1;
@@ -63,7 +63,7 @@ namespace OOP_alexmazzotti2.src.view
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(443, 161);
+            this.btnCancel.Location = new System.Drawing.Point(388, 197);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 2;
@@ -75,7 +75,7 @@ namespace OOP_alexmazzotti2.src.view
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(668, 274);
+            this.ClientSize = new System.Drawing.Size(641, 255);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.tableLayoutPanel1);
