@@ -41,6 +41,8 @@ namespace OOP_alexmazzotti2
                     Button btn = new Button();
                     _dic.Add(btn, n);
                     btn.Click += Btn_Click;
+                    btn.Width = 120;
+                    btn.Height = 40;
                     btn.Text = "Scegli";
                     tableLayoutPanel1.Controls.Add(btn, 6 - val + j * 2, i);
                     n++;
@@ -51,10 +53,17 @@ namespace OOP_alexmazzotti2
 
         private void Btn_Click(object sender, EventArgs e)
         {
-            int i = _dic[(Button)sender];
+            Button btn = (Button)sender;
+            int i = _dic[btn];
             Console.WriteLine(i.ToString());
             DialogCalciatori form = new DialogCalciatori(_li.GetRange(i*5, 5));
             form.ShowDialog();
+            Calciatore c=form.GetSelezionato();
+            if (c != null)
+            {
+                btn.Text = c.Nome;
+                btn.Enabled = false;
+            }
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
