@@ -26,6 +26,7 @@ namespace OOP_alexmazzotti2
                 liRet.AddRange(GetRandomPlayers(ruolo, n*5));
                 i++;
             }
+            liRet.Reverse();
             return liRet;
 
         }

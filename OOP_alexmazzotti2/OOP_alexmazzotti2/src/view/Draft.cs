@@ -44,6 +44,7 @@ namespace OOP_alexmazzotti2
                     btn.Width = 120;
                     btn.Height = 40;
                     btn.Text = "Scegli";
+                    btn.BackColor = ColorBtn(i);
                     tableLayoutPanel1.Controls.Add(btn, 6 - val + j * 2, i);
                     n++;
                 }
@@ -63,6 +64,21 @@ namespace OOP_alexmazzotti2
             {
                 btn.Text = c.Nome;
                 btn.Enabled = false;
+            }
+        }
+
+        private Color ColorBtn(int i)
+        {
+            switch (i)
+            {
+                case 0:
+                    return Color.Blue;
+                case 1:
+                    return Color.Green;
+                case 2:
+                    return Color.Yellow;
+                default:
+                    return Color.Red;
             }
         }
 
