@@ -12,9 +12,10 @@ namespace OOP_alexmazzotti2
         private List<Calciatore> _li = new List<Calciatore>();
         public LogicsFile()
         {
-            string filePath = "C:\\Users\\alexm\\OneDrive\\Desktop\\workspace-prog\\OOP_alexmazzotti2\\OOP_alexmazzotti2\\OOP_alexmazzotti2\\res\\listacalciatori.txt";
+            var path = "../../res/listacalciatori.txt";
             const char separator = ';';
-            using (StreamReader reader = new StreamReader(filePath))
+            Console.Out.WriteLine(path);
+            using (StreamReader reader = new StreamReader(path))
             {
                 string line;
                 while ((line = reader.ReadLine()) != null)
