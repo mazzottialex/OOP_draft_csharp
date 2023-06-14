@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OOP_alexmazzotti2.src.logics;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,21 +13,23 @@ namespace OOP_alexmazzotti2
 {
     public partial class ChoseModulo : Form
     {
-        private Modulo mod;
+        private Modulo _mod;
+        private ILogicsModulo _log;
         public ChoseModulo()
         {
             InitializeComponent();
+            _log = new LogicsModuloImpl(); 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DialogModulo form = new DialogModulo();
+            DialogModulo form = new DialogModulo(_log.GetLiModuli());
             form.ShowDialog();
-            mod=form.GetModuloSelezionato();
+            _mod=form.GetModuloSelezionato();
             button1.Visible = false;
             label1.Visible = false;
             lblModulo.Visible = true;
-            lblModulo.Text = "Modulo scelto:"+mod.ToString();
+            lblModulo.Text = "Modulo scelto:" + _mod.ToString();
             
             button2.Visible=true;
 
@@ -34,7 +37,7 @@ namespace OOP_alexmazzotti2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Draft form = new Draft(mod);
+            Draft form = new Draft(_mod);
             form.Show();
             this.Hide();
         }

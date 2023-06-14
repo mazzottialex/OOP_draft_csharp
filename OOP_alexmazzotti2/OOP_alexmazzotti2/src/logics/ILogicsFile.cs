@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_alexmazzotti2
+namespace OOP_alexmazzotti2.src.logics
 {
-    interface ILogicsForm3
+    interface ILogicsFile
     {
-        List<Calciatore> GetList(Modulo mod);
+        List<Calciatore> GetLi();
     }
 }

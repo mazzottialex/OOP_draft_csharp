@@ -24,3 +24,16 @@ C:\Users\alexm\OneDrive\Desktop\Nuova cartella (2)\OOP_draft_csharp\OOP_alexmazz
 C:\Users\alexm\OneDrive\Desktop\Nuova cartella (2)\OOP_draft_csharp\OOP_alexmazzotti2\OOP_alexmazzotti2\obj\Debug\OOP_alexmazzotti2.csproj.CoreCompileInputs.cache
 C:\Users\alexm\OneDrive\Desktop\Nuova cartella (2)\OOP_draft_csharp\OOP_alexmazzotti2\OOP_alexmazzotti2\obj\Debug\OOP_alexmazzotti2.exe
 C:\Users\alexm\OneDrive\Desktop\Nuova cartella (2)\OOP_draft_csharp\OOP_alexmazzotti2\OOP_alexmazzotti2\obj\Debug\OOP_alexmazzotti2.pdb
+C:\Users\alexm\OneDrive\Desktop\C# project\OOP_draft_csharp\OOP_alexmazzotti2\OOP_alexmazzotti2\bin\Debug\OOP_alexmazzotti2.exe.config
+C:\Users\alexm\OneDrive\Desktop\C# project\OOP_draft_csharp\OOP_alexmazzotti2\OOP_alexmazzotti2\bin\Debug\OOP_alexmazzotti2.exe
+C:\Users\alexm\OneDrive\Desktop\C# project\OOP_draft_csharp\OOP_alexmazzotti2\OOP_alexmazzotti2\bin\Debug\OOP_alexmazzotti2.pdb
+C:\Users\alexm\OneDrive\Desktop\C# project\OOP_draft_csharp\OOP_alexmazzotti2\OOP_alexmazzotti2\obj\Debug\OOP_alexmazzotti2.ChoseModulo.resources
+C:\Users\alexm\OneDrive\Desktop\C# project\OOP_draft_csharp\OOP_alexmazzotti2\OOP_alexmazzotti2\obj\Debug\OOP_alexmazzotti2.src.view.DialogCalciatori.resources
+C:\Users\alexm\OneDrive\Desktop\C# project\OOP_draft_csharp\OOP_alexmazzotti2\OOP_alexmazzotti2\obj\Debug\OOP_alexmazzotti2.DialogModulo.resources
+C:\Users\alexm\OneDrive\Desktop\C# project\OOP_draft_csharp\OOP_alexmazzotti2\OOP_alexmazzotti2\obj\Debug\OOP_alexmazzotti2.Draft.resources
+C:\Users\alexm\OneDrive\Desktop\C# project\OOP_draft_csharp\OOP_alexmazzotti2\OOP_alexmazzotti2\obj\Debug\OOP_alexmazzotti2.Properties.Resources.resources
+C:\Users\alexm\OneDrive\Desktop\C# project\OOP_draft_csharp\OOP_alexmazzotti2\OOP_alexmazzotti2\obj\Debug\OOP_alexmazzotti2.csproj.GenerateResource.cache
+C:\Users\alexm\OneDrive\Desktop\C# project\OOP_draft_csharp\OOP_alexmazzotti2\OOP_alexmazzotti2\obj\Debug\OOP_alexmazzotti2.csproj.CoreCompileInputs.cache
+C:\Users\alexm\OneDrive\Desktop\C# project\OOP_draft_csharp\OOP_alexmazzotti2\OOP_alexmazzotti2\obj\Debug\OOP_alexmazzotti2.exe
+C:\Users\alexm\OneDrive\Desktop\C# project\OOP_draft_csharp\OOP_alexmazzotti2\OOP_alexmazzotti2\obj\Debug\OOP_alexmazzotti2.pdb
+C:\Users\alexm\OneDrive\Desktop\C# project\OOP_draft_csharp\OOP_alexmazzotti2\OOP_alexmazzotti2\obj\Debug\OOP_alexmazzotti2.csproj.AssemblyReference.cache

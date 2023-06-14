@@ -13,18 +13,12 @@ namespace OOP_alexmazzotti2
     public partial class DialogModulo : Form
     {
         private IDictionary<RadioButton, Modulo> _dic = new Dictionary<RadioButton, Modulo>();
-        private List<Modulo> _listModuli = new List<Modulo> { new Modulo(5, 3, 2),
-                new Modulo(5, 2, 3),
-                new Modulo(4, 5, 1),
-                new Modulo(4, 4, 2),
-                new Modulo(4, 3, 3),
-                new Modulo(3, 5, 2),
-                new Modulo(3, 4, 3),
-            };
+        private List<Modulo> _listModuli;
         private Modulo _modS;
 
-        public DialogModulo()
+        public DialogModulo(List<Modulo> listModuli)
         {
+            _listModuli = listModuli;
             InitializeComponent();
             InitializeRadioButton();
         }
@@ -38,7 +32,7 @@ namespace OOP_alexmazzotti2
                 RadioButton rb = new RadioButton();
                 rb.Text = mod.ToString();
                 
-                rb.Location = new System.Drawing.Point(220, 40 + i);
+                rb.Location = new Point(220, 40 + i);
                 _dic.Add(rb, mod);
                 Controls.Add(rb);
             }

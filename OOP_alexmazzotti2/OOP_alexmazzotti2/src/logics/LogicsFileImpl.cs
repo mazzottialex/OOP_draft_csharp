@@ -7,20 +7,19 @@ using System.IO;
 
 namespace OOP_alexmazzotti2
 {
-    class LogicsFile
+    class LogicsFileImpl : src.logics.ILogicsFile
     {
         private List<Calciatore> _li = new List<Calciatore>();
-        public LogicsFile()
+        public LogicsFileImpl()
         {
             var path = "../../res/listacalciatori.txt";
-            const char separator = ';';
-            Console.Out.WriteLine(path);
+            const char sep = ';';
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    string[] parti = line.Split(separator);
+                    string[] parti = line.Split(sep);
                     Ruolo r;
                     switch (parti[1].ToCharArray()[0])
                     {

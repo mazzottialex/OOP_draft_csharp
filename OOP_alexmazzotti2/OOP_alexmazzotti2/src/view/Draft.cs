@@ -13,14 +13,14 @@ namespace OOP_alexmazzotti2
 {
     public partial class Draft : Form
     {
-        private ILogicsForm3 _log;
+        private ILogicsDraft _log;
         private Modulo _mod;
         private List<Calciatore> _li = new List<Calciatore>();
         private Dictionary<Button, int> _dic = new Dictionary<Button, int>();
         public Draft(Modulo mod)
         {
             _mod = mod;
-            _log = new LogicsForm3Impl();
+            _log = new LogicsDraftImpl();
             _li = _log.GetList(mod);
             InitializeComponent();
             InitializeButton();          
@@ -30,7 +30,7 @@ namespace OOP_alexmazzotti2
         private void InitializeButton()
         {
             List<int> moduloLi = _mod.GetList();
-            Console.WriteLine(moduloLi.ToString());
+            //Console.WriteLine(moduloLi.ToString());
             moduloLi.Reverse();
             int i = 0;
             int n = 0;
@@ -60,10 +60,15 @@ namespace OOP_alexmazzotti2
             DialogCalciatori form = new DialogCalciatori(_li.GetRange(i*5, 5));
             form.ShowDialog();
             Calciatore c=form.GetSelezionato();
+            _log.AddCalciatore(c);
             if (c != null)
             {
                 btn.Text = c.Nome;
                 btn.Enabled = false;
+            }
+            if (_log.isCompleted())
+            {
+                 btnClose.Visible = true;
             }
         }
 
@@ -72,7 +77,7 @@ namespace OOP_alexmazzotti2
             switch (i)
             {
                 case 0:
-                    return Color.Blue;
+                    return Color.Orange;
                 case 1:
                     return Color.Green;
                 case 2:
@@ -85,6 +90,11 @@ namespace OOP_alexmazzotti2
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

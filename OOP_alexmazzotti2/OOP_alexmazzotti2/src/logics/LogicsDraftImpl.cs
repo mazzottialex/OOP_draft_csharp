@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OOP_alexmazzotti2.src.logics;
 
 namespace OOP_alexmazzotti2
 {
-    class LogicsForm3Impl : ILogicsForm3
+    class LogicsDraftImpl : ILogicsDraft
     {
         public List<Calciatore> Li { get; set; }
-        public LogicsForm3Impl(){
-            LogicsFile file = new LogicsFile();
+        public List<Calciatore> _liTeam = new List<Calciatore>();
+        public LogicsDraftImpl(){
+            ILogicsFile file = new LogicsFileImpl();
             Li = file.GetLi();
         }
         public List<Calciatore> GetList(Modulo mod){
@@ -43,6 +45,18 @@ namespace OOP_alexmazzotti2
                 newLi.Add(Li[val]);
             }
             return newLi;
+        }
+
+        public void AddCalciatore(Calciatore c)
+        {
+            _liTeam.Add(c);
+        }
+
+        public bool isCompleted()
+        {
+            if (_liTeam.Count >= 11)
+                return true;
+            return false;
         }
     }
 }

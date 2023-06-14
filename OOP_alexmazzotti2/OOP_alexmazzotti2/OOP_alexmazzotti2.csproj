@@ -47,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\data\EnumRuolo.cs" />
+    <Compile Include="src\logics\ILogicsFile.cs" />
+    <Compile Include="src\logics\ILogicsModulo.cs" />
+    <Compile Include="src\logics\LogicsModuloImpl.cs" />
     <Compile Include="src\view\ChoseModulo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,9 +74,9 @@
     <Compile Include="src\view\Draft.Designer.cs">
       <DependentUpon>Draft.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\logics\LogicsFile.cs" />
-    <Compile Include="src\logics\ILogicsForm3.cs" />
-    <Compile Include="src\logics\LogicsForm3Impl.cs" />
+    <Compile Include="src\logics\LogicsFileImpl.cs" />
+    <Compile Include="src\logics\ILogicsDraft.cs" />
+    <Compile Include="src\logics\LogicsDraftImpl.cs" />
     <Compile Include="src\data\Modulo.cs" />
     <Compile Include="src\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

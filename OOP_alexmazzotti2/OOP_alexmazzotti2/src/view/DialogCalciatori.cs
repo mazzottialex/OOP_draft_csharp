@@ -12,9 +12,9 @@ namespace OOP_alexmazzotti2.src.view
 {
     public partial class DialogCalciatori : Form
     {
-        private List<Calciatore> _li=new List<Calciatore>();
-        private Dictionary<Button, Calciatore> _dic=new Dictionary<Button, Calciatore>();
-        private Calciatore _selezionato=null;
+        private List<Calciatore> _li = new List<Calciatore>();
+        private Dictionary<Button, Calciatore> _dic = new Dictionary<Button, Calciatore>();
+        private Calciatore _selezionato = null;
         public DialogCalciatori(List<Calciatore> li)
         {
             _li = li;
