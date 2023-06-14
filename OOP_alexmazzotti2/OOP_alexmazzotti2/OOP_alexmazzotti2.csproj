@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\data\EnumRuolo.cs" />
-    <Compile Include="src\logics\ILogicsFile.cs" />
-    <Compile Include="src\logics\ILogicsModulo.cs" />
-    <Compile Include="src\logics\LogicsModuloImpl.cs" />
+    <Compile Include="src\model\EnumRuolo.cs" />
+    <Compile Include="src\controller\ILogicsFile.cs" />
+    <Compile Include="src\controller\ILogicsModulo.cs" />
+    <Compile Include="src\controller\LogicsModuloImpl.cs" />
     <Compile Include="src\view\ChoseModulo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,13 +74,13 @@
     <Compile Include="src\view\Draft.Designer.cs">
       <DependentUpon>Draft.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\logics\LogicsFileImpl.cs" />
-    <Compile Include="src\logics\ILogicsDraft.cs" />
-    <Compile Include="src\logics\LogicsDraftImpl.cs" />
-    <Compile Include="src\data\Modulo.cs" />
+    <Compile Include="src\controller\LogicsFileImpl.cs" />
+    <Compile Include="src\controller\ILogicsDraft.cs" />
+    <Compile Include="src\controller\LogicsDraftImpl.cs" />
+    <Compile Include="src\model\Modulo.cs" />
     <Compile Include="src\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="src\data\Calciatore.cs" />
+    <Compile Include="src\model\Calciatore.cs" />
     <EmbeddedResource Include="src\view\ChoseModulo.resx">
       <DependentUpon>ChoseModulo.cs</DependentUpon>
     </EmbeddedResource>
